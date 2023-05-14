@@ -1,0 +1,39 @@
+.container {
+    width: 420px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.error {
+    color: red;
+    font-weight: 300;
+    background-color: rgb(245, 193, 193);
+    height: 40px;
+    width: 400px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 200px;
+    padding: 5px;
+}
+
+.ready {
+    color: green;
+    font-weight: 300;
+    background-color: rgb(193, 245, 195);
+    height: 30px;
+    width: 400px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 200px;
+}
