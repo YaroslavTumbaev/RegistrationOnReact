@@ -3,12 +3,7 @@ import styles from './Reg.module.css'
 import Input from '../Input/Input'
 import Btns from '../Buttons/Btn'
 
-const Reg = ({ setShow, setOut, setReg }) => {
-  const [data, setData] = useState({
-    email: '',
-    name: '',
-    password: '',
-  })
+const Reg = ({ setShow, setOut, setReg, data, setData }) => {
 
 
   const [error, setError] = useState(false)

@@ -4,9 +4,9 @@ import styles from './Input.module.css'
 
 const Input = ( { data, setData, setReady, setError } ) => {
     const fn = () => {
-    if (data.email.includes('@gmail.com') && data.password.length >= 7 && data.email) {
-        setReady(true)
-        setError(false)
+        if (data.email.includes('@gmail.com') && data.password.length >= 7 && data.email) {
+            setReady(true)
+            setError(false)
         }
     }
 

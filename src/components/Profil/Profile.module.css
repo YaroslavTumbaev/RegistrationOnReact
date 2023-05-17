@@ -1,0 +1,13 @@
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    position: absolute;
+    top: 150px;
+    font-weight: 300;
+    font-size: 25px;
+    z-index: -1;
+}
