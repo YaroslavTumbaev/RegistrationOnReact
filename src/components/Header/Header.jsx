@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import Reg from '../Registration/Reg/Reg'
 import styles from './Header.module.css'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
     const [show, setShow] = useState(false)
@@ -12,11 +13,11 @@ const Header = () => {
 return (
     <>
         <div className={styles.header}>
-            <div className={styles.btn}>
-                
-            </div>
+                <Link to='/'><button className={styles.btn}>Home</button></Link>
 
-
+            <button className={styles.btn}>
+                <Link to='/message'>Message</Link>
+            </button>
 
 
             <div className={styles.headerReg}>

@@ -1,12 +1,8 @@
 .btn {
-    position: relative;
-    left: 600px;
     border: 1px solid black;
 }
 
 .header {
-    position: absolute;
-    left: 0;
     width: 1440px;
     height: 70px;
     background-color: seashell;
