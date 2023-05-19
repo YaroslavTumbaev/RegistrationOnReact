@@ -1,19 +1,23 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styles from './Btn.module.css'
+import { myContext } from '../../Router'
 
-const Btns = ( { setShow, setReg, setOut, setError, data } ) => {
+
+const Btns = ( { setShow, setReg, setOut, setError } ) => {
 
 
     const send = () => {
-        if (data.email.includes('@gmail.com') && data.password.length >= 8 && data.name) {
+        if (context.data.email.includes('@gmail.com') && context.data.password.length >= 8 && context.data.name) {
             setOut(true)
             setReg(true)
             setShow(false)
-            alert(`Вы зарегистрировались под именем "${data.name}"`)
+            alert(`Вы зарегистрировались под именем "${context.data.name}"`)
             }else {
             setError(true)
         }
     }
+
+    const context = useContext(myContext)
 
 return (
     <>

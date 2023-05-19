@@ -10,7 +10,11 @@
     position: absolute;
     left: 500px;
     top: 200px;
-    z-index: 999;
+    background-color: #ffffff;
+    z-index: 100;
+    -webkit-box-shadow: 10px 11px 38px 29px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 10px 11px 38px 29px rgba(34, 60, 80, 0.2);
+    box-shadow: 10px 11px 38px 29px rgba(34, 60, 80, 0.2);
 }
 
 .error {

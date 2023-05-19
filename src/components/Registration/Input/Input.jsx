@@ -1,32 +1,35 @@
-import React from 'react'
 import styles from './Input.module.css'
+import React, { useContext } from 'react'
+import { myContext } from '../../Router'
 
 
 const Input = ( { data, setData, setReady, setError } ) => {
     const fn = () => {
-        if (data.email.includes('@gmail.com') && data.password.length >= 7 && data.email) {
+        if (context.data.email.includes('@gmail.com') && context.data.password.length >= 7 && context.data.email) {
             setReady(true)
             setError(false)
         }
     }
 
+    const context = useContext(myContext)
+
 return (
     <>
      <div className={styles.inputs}>
             <input className={styles.Input} placeholder='Email' onChange={e => {
-                setData(prev => ({...prev, email: e.target.value}))
+                context.setData(prev => ({...prev, email: e.target.value}))
                 fn()
-            }} value={data.email}/>
+            }} value={context.data.email}/>
 
             <input className={styles.Input} placeholder='Name' onChange={e => {
-                setData(prev => ({...prev, name: e.target.value}))
+                context.setData(prev => ({...prev, name: e.target.value}))
                 fn()
-            }} value={data.name}/>
+            }} value={context.data.name}/>
 
             <input className={styles.Input} placeholder='Password' onChange={e => {
-                setData(prev => ({...prev, password: e.target.value}))
+                context.setData(prev => ({...prev, password: e.target.value}))
                 fn()
-            }} value={data.password}/>
+            }} value={context.data.password}/>
      </div>
     </>
 )

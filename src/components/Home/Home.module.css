@@ -1,0 +1,45 @@
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(60, 60, 60);
+    margin: 20px;
+    color: azure;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+}
+
+.text {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+span {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -5px;
+    left: -10px;
+}
